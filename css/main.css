@@ -12,7 +12,7 @@ header {
 	position: fixed;
 	top: 0px;
 	opacity: 0.9;
-	display: flex;
+	display: flex !important;
 	background-color: #571762f0;
 	font-family: "Asap Condensed", sans-serif;
 	justify-content: space-between;
@@ -206,55 +206,38 @@ section {
 .backEndOverlay::after {
 	clip-path: polygon(63% 81%, 100% 49%, 100% 100%, 0% 100%);
 }
-.frontEnd ul {
-}
-.frontEnd ul li {
-}
 
-.fullStack {
-}
-.backEnd {
-}
+/*  */
 
-#projects {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+.portfolio-menu {
+	text-align: center;
 }
-#projects div {
+.portfolio-menu ul li {
 	display: inline-block;
-}
-.title,
-.filter {
-	display: block;
-	position: absolute;
-}
-.title {
-	margin: -190px;
-}
-#projects .filter {
-	margin: -90px;
-	width: 30vw;
-	min-width: 200px;
-	display: flex;
-}
-.filter button {
-	margin: 0px 10px;
-	width: 200px;
-	height: 50px;
-	font-size: 21px;
-	font-weight: bold;
-	border-radius: 5px;
+	margin: 0;
+	list-style: none;
+	padding: 10px 15px;
+	cursor: pointer;
+	-webkit-transition: all 05s ease;
+	-moz-transition: all 05s ease;
+	-ms-transition: all 05s ease;
+	-o-transition: all 05s ease;
+	transition: all 0.5s ease;
 }
 
-#projects img {
-	width: 20vw;
-	min-width: 140px;
-	height: auto;
-
-	/* clip-path: polygon(50% 5%, 100% 30%, 100% 70%, 50% 95%, 0 70%, 0 30%); */
-	padding: 10px 10px;
+.portfolio-item {
+	/*width:100%;*/
 }
+.portfolio-item .item {
+	/*width:303px;*/
+	float: left;
+	margin-bottom: 10px;
+}
+
+/*  */
+
+/* end of project section */
+
 table {
 	border: 2px solid black;
 	width: 70vw;
@@ -286,6 +269,9 @@ table td svg:hover {
 /*  */
 /*  */
 /*  */
+#pie-chart {
+	margin: 10vh;
+}
 
 .pie-chart {
 	background: radial-gradient(circle closest-side, transparent 90%, white 0),
@@ -335,7 +321,7 @@ table td svg:hover {
 }
 
 footer {
-	display: flex;
+	display: flex !important;
 	background-color: black;
 	color: beige;
 	padding: 20px 10%;
