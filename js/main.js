@@ -17,3 +17,17 @@ gallery : {
 }
 });
 });
+
+
+
+let mopileNavMenu = document.querySelector("header svg");
+let navMenu = document.querySelectorAll("nav a");
+
+
+mopileNavMenu.addEventListener("click", navdisplay);
+function navdisplay(){
+    console.log(navMenu);
+    navMenu.forEach((a)=>{
+        a.classList.toggle("active")
+    })
+}
